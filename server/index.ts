@@ -1,10 +1,6 @@
-import express from 'express'
-import api from './api'
-const app = express()
+import app from './app'
 const port = 8080
 
-app.use('/api', api)
-
 app.listen(port, () => {
-  console.log(`server started at http://localhost:${port}`);
+  console.log(`server started at http://localhost:${port}`)
 })
