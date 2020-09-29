@@ -1,8 +1,7 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
+import React, { ReactElement, useState, useEffect } from 'react'
 import axios from 'axios'
 
-function App() {
+const App: React.FC = (): ReactElement => {
   const [greet, setGreet] = useState('')
   useEffect(() => {
     async function getGreet() {
